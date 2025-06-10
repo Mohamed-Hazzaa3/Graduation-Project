@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "pay": "Pay To Reserve",
+    "rooms": "Rooms",
+    "about": "About",
+    "student": "Student area"
+  },
+  "home": {
+    "header": "Welcome to your home away from home.",
+    "button": "Explore Rooms"
+  },
+  "rooms": {
+    "header": {
+      "h1": "Available Rooms",
+      "p": "Modern yet comfortable university dorms, located in the heart of campus life. Imagine waking up to a bright, cozy space, spending your days studying in quiet lounges, socializing in vibrant common areas, or just relaxing in your private room after a long day. Enjoy the perfect balance of privacy and community in a place designed for both learning and living. Welcome to your home away from home."
+    },
+    "navigate": {
+      "all": "All Rooms",
+      "one": "1",
+      "three": "3",
+      "four": "4",
+      "seven": "7",
+      "eight": "8",
+      "twelve": "12",
+      "students": "students"
+    },
+    "room-card": {
+      "room": "Room",
+      "for": "For up to",
+      "student": "Student",
+      "night": "night",
+      "details": "Details & reservation"
+    }
+  },
+  "room": {
+    "h1": "Cabin",
+    "description": "Escape the distractions and focus on your studies in our cozy student room. Designed for comfort and productivity, this room offers a quiet and private space within a vibrant campus environment. Inside, you'll find a modern study desk, a comfortable bed, ample storage, and natural lighting to support your daily routine. The room also includes access to shared facilities like a fully-equipped kitchen, clean bathrooms, and relaxing common areas—perfect for study breaks and making new friends.",
+    "for": "For up to",
+    "guests": "guests",
+    "located": "Located in the heart of the",
+    "uni": "University",
+    "privacy": "Privacy",
+    "hun": "100%",
+    "guaranteed": "guaranteed",
+    "header": {
+      "reserve": "Reserve",
+      "today": "today. Pay online."
+    },
+    "nav": {
+      "old": "Old students",
+      "new": "New students",
+      "logged": "Logged in as"
+    },
+    "form": {
+      "pay": "Payment Code",
+      "personalInformation": "Personal Information",
+      "first": "First Name",
+      "second": "Second Name",
+      "third": "Third Name",
+      "fourth": "Fourth Name",
+      "full": "Full name",
+      "id": "National ID",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "type": "Accommodation Type",
+      "status": "Health Status",
+      "birthDate": "Birth Date",
+      "gender": "Gender",
+      "religion": "Religion",
+      "hasSpecialNeeds": "HasSpecialNeeds",
+      "isMarried": "Married",
+      "guardianInformation": "Guardian Information",
+      "guardianFirstName": "Guardian First Name",
+      "guardianSecondName": "Guardian Second Name",
+      "guardianThirdName": "Guardian Third Name",
+      "guardianFourthName": "Guardian Fourth Name",
+      "guardian-phone": "Guardian-Phone",
+      "guardianRelation": "Guardian Relation",
+      "guardianNationalId": "Guardian NationalId",
+      "guardianJob": "Guardian Job",
+      "guardianPhone": "Guardian Phone",
+      "college": "College",
+      "collegeDepartment": "College Department",
+      "academicInformation": "Academic Information",
+      "academicStudentCode": "Academic Student Code",
+      "acadmicYear": "Academic Year",
+      "highSchool": "HighSchool",
+      "highSchoolPercentage": "HighSchool Percentage",
+      "gradePercentage": "Grade Percentage",
+      "previousYearGrade": "Previous Year Grade",
+      "previousYearHosting": "Previous Year Hosting",
+      "location": "Location",
+      "country": "Country",
+      "governorate": "governorate",
+      "city": "City",
+      "village": "Village",
+      "uploadDocuments": "Upload Documents",
+      "nationalIdImage": "National ID Image",
+      "guardianNationalIdImage": "Guardian National Id Image",
+      "personalImage": "Personal Image",
+      "waterBill": "Water Bill",
+      "residenceApplication": "Residence Application",
+      "button": "Submit Application"
+    }
+  },
+  "about": {
+    "first": {
+      "h1": "Welcome to Campus Hostel Yard",
+      "p": "Where comfort and student life blend seamlessly. Located in the heart of campus, this is your home away from home. But it’s not just about the modern dorms—it’s about the experience of learning, growing, and building lasting friendships. Our fully equipped dorms provide a cozy and private space, but the real energy and excitement come from the vibrant student community. Study in quiet lounges, collaborate in shared spaces, and unwind after a long day in a welcoming environment designed for both focus and relaxation.This is where unforgettable memories are made—surrounded by a dynamic academic atmosphere. It’s a place to grow, connect, and truly enjoy your university journey."
+    },
+    "second": {
+      "h1": "Established by Benha University",
+      "p": "Since its founding by Benha University, The University Haven has been a trusted home for students, designed to provide a comfortable and enriching living experience within a supportive academic environment.Over the years, we have maintained the essence of this residence, blending modern student life with the university’s commitment to excellence. Here, you're not just a resident—you’re part of a dynamic and thriving academic community. Join us at The University Haven, where tradition meets innovation, and every stay feels like home.",
+      "button": "Explore our luxury rooms "
+    }
+  },
+  "student": {
+    "home": {
+      "name": "Home",
+      "h1": "Welcome,"
+    },
+    "events": {
+      "name": "Events",
+      "h1": "Your reservations",
+      "no": "You have no reservations yet. Check out our",
+      "rooms": " luxury Rooms",
+      "card1": {
+        "name": "University President's visit "
+      },
+      "card2": {
+        "name": "Trip to the pyramids"
+      }
+    },
+    "profile": {
+      "name": "Student Issue",
+      "h1": "Send Your Issue",
+      "p": "Providing the following information will make us better. See you soon!",
+      "form": {
+        "issue": "Issue Description",
+        "email": "Email address",
+        "issueType": "Issue Type",
+        "id": "National ID number",
+        "button": "Send Issue"
+      }
+    },
+    "sign out": "Sign out"
+  },
+  "choice": {
+    "yes": "Yes",
+    "no": "No",
+    "male": "Male",
+    "female": "Female",
+    "muslim": "Muslim",
+    "christian": "Christian",
+    "jewish": "Jewish"
+  }
+}
