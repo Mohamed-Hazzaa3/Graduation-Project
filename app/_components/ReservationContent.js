@@ -12,7 +12,6 @@ function ReservationContent({
   schools,
   colleges,
   cabin,
-  session,
 }) {
   const [selected, setSelected] = useState("old");
   return (

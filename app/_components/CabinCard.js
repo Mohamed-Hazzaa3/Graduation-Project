@@ -1,11 +1,19 @@
-import { UsersIcon } from "@heroicons/react/24/solid";
+import { BuildingOfficeIcon, UsersIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 import { getTranslation } from "../_lib/server-i18n";
 
 async function CabinCard({ cabin }) {
   const t = await getTranslation();
-  const { roomId, roomNumber, capacity, price, discount, photoUrls } = cabin;
+  const {
+    roomId,
+    roomNumber,
+    capacity,
+    price,
+    discount,
+    photoUrls,
+    buildingId,
+  } = cabin;
 
   return (
     <div className="flex border-primary-800 border">
@@ -23,6 +31,13 @@ async function CabinCard({ cabin }) {
             {t?.rooms?.["room-card"]?.room} {roomNumber}
           </h3>
 
+          <div className="flex gap-3 items-center mb-2">
+            <BuildingOfficeIcon className="h-5 w-5 text-primary-600" />
+            <p className="text-lg text-primary-200">
+              {t?.rooms?.["room-card"]?.building}{" "}
+              <span className="font-bold">{buildingId}</span>{" "}
+            </p>
+          </div>
           <div className="flex gap-3 items-center mb-2">
             <UsersIcon className="h-5 w-5 text-primary-600" />
             <p className="text-lg text-primary-200">

@@ -395,3 +395,37 @@ export const createIssue = async (data, token) => {
     throw error;
   }
 };
+export const changePassword = async (data, token) => {
+  try {
+    const formData = new FormData();
+    Object.entries(data).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+    for (let [key, value] of formData.entries()) {
+      console.log(`${key}:`, value);
+    }
+    console.log(token);
+    const res = await fetch(
+      "http://housing-sys.runasp.net/api/v1/user/change-password",
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        body: formData,
+      }
+    );
+
+    const result = await res.json();
+
+    if (!res.ok || !result.succeeded) {
+      console.error("❌ Error response from server:", result);
+      throw new Error(result?.message || "Submission failed");
+    }
+
+    return result;
+  } catch (error) {
+    console.error("❗ Network error:", error);
+    throw error;
+  }
+};

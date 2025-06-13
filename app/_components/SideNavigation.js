@@ -26,8 +26,13 @@ function SideNavigation() {
       icon: <CalendarDaysIcon className="h-5 w-5 text-primary-600" />,
     },
     {
-      name: mounted ? t("student.profile.name") : "P  rofile",
-      href: "/account/profile",
+      name: mounted ? t("student.profile.name") : "Student Issue",
+      href: "/account/issue",
+      icon: <UserIcon className="h-5 w-5 text-primary-600" />,
+    },
+    {
+      name: mounted ? t("student.password.name") : "Change-Password",
+      href: "/account/password",
       icon: <UserIcon className="h-5 w-5 text-primary-600" />,
     },
   ];

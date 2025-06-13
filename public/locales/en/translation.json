@@ -27,6 +27,7 @@
     "room-card": {
       "room": "Room",
       "for": "For up to",
+      "building": "Building number",
       "student": "Student",
       "night": "night",
       "details": "Details & reservation"
@@ -36,6 +37,7 @@
     "h1": "Cabin",
     "description": "Escape the distractions and focus on your studies in our cozy student room. Designed for comfort and productivity, this room offers a quiet and private space within a vibrant campus environment. Inside, you'll find a modern study desk, a comfortable bed, ample storage, and natural lighting to support your daily routine. The room also includes access to shared facilities like a fully-equipped kitchen, clean bathrooms, and relaxing common areas—perfect for study breaks and making new friends.",
     "for": "For up to",
+    "building": "Building number",
     "guests": "guests",
     "located": "Located in the heart of the",
     "uni": "University",
@@ -142,6 +144,14 @@
         "id": "National ID number",
         "button": "Send Issue"
       }
+    },
+    "password": {
+      "name": "Change-Password",
+      "h1": "Change Your Password",
+      "oldPassword": "Old-Password",
+      "newPassword": "New-Password",
+      "confirmPassword": "Confirm-Password",
+      "button": "Confirm"
     },
     "sign out": "Sign out"
   },
