@@ -3,7 +3,6 @@
 import { useState } from "react";
 import FormType from "./FormType";
 import ReservationFormOld from "./ReservationFormOld";
-import LoginMessage from "./LoginMessage";
 import ReservationFormNew from "./ReservationFormNew";
 
 function ReservationContent({
