@@ -23,13 +23,10 @@ const CheckoutForm = () => {
     try {
       const formData = new FormData();
       formData.append("email", email);
-      const res = await fetch(
-        "http://housing-sys.runasp.net/api/StudentRegistration/request-code",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
+      const res = await fetch("/api/request-code", {
+        method: "POST",
+        body: formData,
+      });
 
       const result = await res.json();
 
