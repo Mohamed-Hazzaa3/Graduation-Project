@@ -22,7 +22,7 @@ export default function LoginPage() {
         formData.append("Password", values.password);
 
         const res = await fetch(
-          "http://housing-sys.runasp.net/api/v1/authentication/sign-in",
+          "https://housing-sys.runasp.net/api/v1/authentication/sign-in",
           {
             method: "POST",
             body: formData,

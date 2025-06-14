@@ -1,9 +1,9 @@
 export async function POST(req) {
   try {
-    const body = await req.formData(); // لأنك بتستخدم FormData
+    const body = await req.formData();
 
     const response = await fetch(
-      "http://housing-sys.runasp.net/api/StudentRegistration/request-code",
+      "https://housing-sys.runasp.net/api/StudentRegistration/request-code",
       {
         method: "POST",
         body: body,

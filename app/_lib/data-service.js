@@ -4,7 +4,7 @@
 export async function getCabin(id) {
   try {
     const response = await fetch(
-      `http://housing-sys.runasp.net/api/v1/rooms/${id}`
+      `https://housing-sys.runasp.net/api/v1/rooms/${id}`
     );
     const result = await response.json();
 
@@ -26,7 +26,7 @@ export async function getCabin(id) {
 export async function getCabins() {
   try {
     const response = await fetch(
-      "http://housing-sys.runasp.net/api/v1/rooms/List"
+      "https://housing-sys.runasp.net/api/v1/rooms/List"
     );
     const result = await response.json();
 
@@ -47,7 +47,7 @@ export async function getCabins() {
 export async function getCountry() {
   try {
     const response = await fetch(
-      "http://housing-sys.runasp.net/api/v1/countries/list"
+      "https://housing-sys.runasp.net/api/v1/countries/list"
     );
     const result = await response.json();
     if (!result.succeeded || !Array.isArray(result.data)) {
@@ -66,7 +66,7 @@ export async function getCountry() {
 export async function getGovernorates() {
   try {
     const res = await fetch(
-      "http://housing-sys.runasp.net/api/v1/countries/50/governorates"
+      "https://housing-sys.runasp.net/api/v1/countries/50/governorates"
     );
     const result = await res.json();
     if (!result.succeeded || !Array.isArray(result.data)) {
@@ -85,7 +85,7 @@ export async function getGovernorates() {
 export async function getCities(governorateId) {
   try {
     const res = await fetch(
-      `http://housing-sys.runasp.net/api/v1/Governorates/${governorateId}/cities`
+      `https://housing-sys.runasp.net/api/v1/Governorates/${governorateId}/cities`
     );
     const result = await res.json();
     if (!result.succeeded || !Array.isArray(result.data)) {
@@ -105,7 +105,7 @@ export async function getCities(governorateId) {
 export async function getVillages(cityId) {
   try {
     const res = await fetch(
-      `http://housing-sys.runasp.net/api/v1/cities/${cityId}/villages`
+      `https://housing-sys.runasp.net/api/v1/cities/${cityId}/villages`
     );
     const result = await res.json();
     if (!result.succeeded || !Array.isArray(result.data)) {
@@ -125,7 +125,7 @@ export async function getVillages(cityId) {
 export async function getSchools() {
   try {
     const res = await fetch(
-      `http://housing-sys.runasp.net/api/v1/high-school/List`
+      `https://housing-sys.runasp.net/api/v1/high-school/List`
     );
     const result = await res.json();
     if (!result.succeeded || !Array.isArray(result.data)) {
@@ -145,7 +145,7 @@ export async function getSchools() {
 export async function getColleges() {
   try {
     const response = await fetch(
-      "http://housing-sys.runasp.net/api/v1/colleges/List"
+      "https://housing-sys.runasp.net/api/v1/colleges/List"
     );
     const result = await response.json();
     if (!result.succeeded || !Array.isArray(result.data)) {
@@ -164,7 +164,7 @@ export async function getColleges() {
 export async function getCollegesDepartments(collegeId) {
   try {
     const response = await fetch(
-      `http://housing-sys.runasp.net/api/v1/colleges/departments/${collegeId}`
+      `https://housing-sys.runasp.net/api/v1/colleges/departments/${collegeId}`
     );
     const result = await response.json();
     return result.data;
@@ -196,7 +196,7 @@ export async function getEvents() {
 export async function getIssueType() {
   try {
     const res = await fetch(
-      `http://housing-sys.runasp.net/api/v1/issuetypes/list`
+      `https://housing-sys.runasp.net/api/v1/issuetypes/list`
     );
     const result = await res.json();
     if (!result.succeeded || !Array.isArray(result.data)) {
@@ -250,7 +250,7 @@ export const createNewStudent = async (data, roomId) => {
       console.log(`${key}:`, value);
     }
     const response = await fetch(
-      "http://housing-sys.runasp.net/api/v1/new-student/create",
+      "https://housing-sys.runasp.net/api/v1/new-student/create",
       {
         method: "POST",
         body: formData,
@@ -340,7 +340,7 @@ export const createOldStudent = async (data, roomId) => {
 
     formData.append("FavRoomId", roomId);
     const response = await fetch(
-      "http://housing-sys.runasp.net/api/v1/old-student/create",
+      "https://housing-sys.runasp.net/api/v1/old-student/create",
       {
         method: "POST",
         body: formData,
@@ -372,7 +372,7 @@ export const createIssue = async (data, token) => {
     }
     console.log(token);
     const res = await fetch(
-      "http://housing-sys.runasp.net/api/v1/issue/create",
+      "https://housing-sys.runasp.net/api/v1/issue/create",
       {
         method: "POST",
         headers: {
@@ -397,22 +397,15 @@ export const createIssue = async (data, token) => {
 };
 export const changePassword = async (data, token) => {
   try {
-    const formData = new FormData();
-    Object.entries(data).forEach(([key, value]) => {
-      formData.append(key, value);
-    });
-    for (let [key, value] of formData.entries()) {
-      console.log(`${key}:`, value);
-    }
-    console.log(token);
     const res = await fetch(
-      "http://housing-sys.runasp.net/api/v1/user/change-password",
+      "https://housing-sys.runasp.net/api/v1/user/change-password",
       {
-        method: "POST",
+        method: "PUT",
         headers: {
           Authorization: `Bearer ${token}`,
+          "Content-Type": "application / json",
         },
-        body: formData,
+        body: JSON.stringify(data),
       }
     );
 
